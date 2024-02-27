@@ -7,12 +7,13 @@
 
 import Foundation
 import UIKit
-//
-//func emailSent(){
-//    let alertControl = UIAlertController(title: "Purchase successfull", message: "" , preferredStyle: .alert)
-//    let size = UIAlertAction(title: "Okay", style: .cancel) { [self] action in
-//        emailtextFeild.text = nil
-//    }
-//    alertControl.addAction(size)
-//    present(alertControl, animated: true, completion: nil)
-//}
+
+
+public func openUrl(urlString:String!) {
+    let url = URL(string: urlString)!
+    if #available(iOS 10.0, *) {
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    } else {
+        UIApplication.shared.openURL(url)
+    }
+}

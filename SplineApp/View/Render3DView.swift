@@ -16,13 +16,24 @@ struct Render3DView: View {
     @State private var isLoading = true
     
     var body: some View {
-        VStack {
+        ZStack(alignment: .topLeading){
             if isLoading {
                 ActivityIndicator()
             } else {
-//                let url = URL(string: "https://build.spline.design/8gbKmcNP8lpWXdTgOGxi/scene.splineswift")!
                 let url = Bundle.main.url(forResource: object.name, withExtension: "splineswift")!
                 try? SplineView(sceneFileURL: url)
+                
+                Button(action: {
+                    openUrl(urlString: "https://www.linkedin.com/in/aniket-bane-ios")
+                }) {
+                    Image("linkedin")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 45, height: 45)
+                }
+                .background(Color.black.opacity(0.5))
+                .clipShape(Circle())
+                .padding()
             }
         }
         .onAppear {
