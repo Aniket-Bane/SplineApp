@@ -37,7 +37,7 @@
 		E2C8AC602B8E3CEF0010C0C4 /* gameboy_copy.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameboy_copy.splineswift; sourceTree = "<group>"; };
 		E2C8AC662B8E43370010C0C4 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		E2C8AC682B8E457F0010C0C4 /* polaroid_go_copy.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = polaroid_go_copy.splineswift; sourceTree = "<group>"; };
-		E2F57B252B8DFA35002A8830 /* SplineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F57B252B8DFA35002A8830 /* Spline-Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spline-Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F57B282B8DFA35002A8830 /* SplineAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplineAppApp.swift; sourceTree = "<group>"; };
 		E2F57B2A2B8DFA35002A8830 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E2F57B2C2B8DFA37002A8830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		E2F57B262B8DFA35002A8830 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2F57B252B8DFA35002A8830 /* SplineApp.app */,
+				E2F57B252B8DFA35002A8830 /* Spline-Shop.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,7 +181,7 @@
 				E2F57B422B8E0034002A8830 /* SplineRuntime */,
 			);
 			productName = SplineApp;
-			productReference = E2F57B252B8DFA35002A8830 /* SplineApp.app */;
+			productReference = E2F57B252B8DFA35002A8830 /* Spline-Shop.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -387,18 +387,18 @@
 				DEVELOPMENT_TEAM = ZL9DDXABC9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Spline Shop";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aniket.bane.SplineApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Spline-Shop";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,18 +416,18 @@
 				DEVELOPMENT_TEAM = ZL9DDXABC9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Spline Shop";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aniket.bane.SplineApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Spline-Shop";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
