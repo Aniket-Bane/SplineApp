@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    var object : [objects] = objectData
+    
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            TabView{
+                ForEach(object[0...4]){ item in
+                    CardView(object: item)
+                }
+            }
+            .tabViewStyle(PageTabViewStyle())
+            .padding(.vertical,20)
         }
-        .padding()
+        .background(Color.black)
+        
     }
 }
 

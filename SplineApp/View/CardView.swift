@@ -9,16 +9,16 @@ import SwiftUI
 
 struct CardView: View {
     
-    @State private var isAnimating : Bool = false
+    var object : objects
     
     var body: some View {
         VStack () {
-            Render3DView()
-                .frame(height: 600)
+            Render3DView(object: object)
+                .frame(height: 550)
                 .ignoresSafeArea()
                 .cornerRadius(20)
             
-            Text("apple")
+            Text(object.title)
                 .foregroundStyle(Color.white)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
@@ -27,16 +27,18 @@ struct CardView: View {
             //Button : Purchase
             PurchaseButtonView()
             
+            Spacer()
+            
         } // : VStack
-//        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-//        .background(LinearGradient(colors: [Color.black,Color.gray], startPoint: .top, endPoint: .bottom))
-//        .cornerRadius(20)
-//        .ignoresSafeArea()
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+        .background(LinearGradient(colors: [Color(uiColor:UIColor(hexString:object.color)),Color.black], startPoint: .zero, endPoint: .bottomTrailing))
+        .cornerRadius(20)
+        .ignoresSafeArea()
     }
     
     
 }
 
 #Preview {
-    CardView()
+    CardView(object: objectData[1])
 }
